@@ -1,8 +1,10 @@
 import './App.css'
+import Component1 from './component1/component1'
 
 function App() {
   return (
-    <div className='bg-green-100 h-20 w-20'>
+    <div className="flex items-center justify-center">
+      <Component1 />
     </div>
   )
 }
