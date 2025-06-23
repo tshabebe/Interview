@@ -1,6 +1,6 @@
 export default function Component1() {
   return (
-    <div className="flex flex-col gap-2 bg-emerald-900 p-2 w-[480px]">
+    <div className="flex flex-col gap-2 bg-emerald-900 p-2 w-[380px]">
       <div className="flex gap-2 grow">
         <InformationButton item={'games'} value={0} />
         <InformationButton item={'derash'} value={0} />
@@ -17,7 +17,12 @@ export default function Component1() {
           </div>
           <div className="bg-emerald-600 rounded-md h-4"></div>
           <GridWithCartelaNumber />
+          <Bingo />
         </div>
+      </div>
+      <div className="flex justify-between gap-4 px-4">
+        <Leave />
+        <Refresh />
       </div>
     </div>
   )
@@ -186,5 +191,29 @@ function GridWithCartelaNumber() {
         </div>
       </div>
     </div>
+  )
+}
+
+function Bingo() {
+  return (
+    <button className="bg-orange-300 hover:bg-orange-400 px-4 py-2 rounded-full text-orange-950">
+      Bingo
+    </button>
+  )
+}
+
+function Refresh() {
+  return (
+    <button className="bg-blue-300 hover:bg-blue-400 px-4 py-2 rounded-full text-blue-950 grow">
+      Refresh
+    </button>
+  )
+}
+
+function Leave() {
+  return (
+    <button className="bg-red-300 px-4 py-2 rounded-full text-red-950 grow hover:bgred-400">
+      Leave
+    </button>
   )
 }
