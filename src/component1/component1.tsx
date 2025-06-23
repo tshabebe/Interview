@@ -56,7 +56,7 @@ function BingoGrid() {
     <div className="flex">
       <div className="gap-1 grid grid-cols-5">
         <div className="flex flex-col gap-1">
-          <div className="flex justify-center items-center bg-red-300 rounded-md size-6 text-sm">
+          <div className="flex justify-center items-center bg-red-300 rounded-md size-6 text-red-950 text-sm">
             B
           </div>
           {bingoNumbers.B.map((num) => (
@@ -66,7 +66,7 @@ function BingoGrid() {
           ))}
         </div>
         <div className="flex flex-col gap-1">
-          <div className="flex justify-center items-center bg-blue-300 rounded-md size-6 text-sm">
+          <div className="flex justify-center items-center bg-blue-300 rounded-md size-6 text-blue-950 text-sm">
             I
           </div>
           {bingoNumbers.I.map((num) => (
@@ -76,7 +76,7 @@ function BingoGrid() {
           ))}
         </div>
         <div className="flex flex-col gap-1">
-          <div className="flex justify-center items-center bg-green-300 rounded-md size-6 text-sm">
+          <div className="flex justify-center items-center bg-green-300 rounded-md size-6 text-green-950 text-sm">
             N
           </div>
           {bingoNumbers.N.map((num) => (
@@ -86,7 +86,7 @@ function BingoGrid() {
           ))}
         </div>
         <div className="flex flex-col gap-1">
-          <div className="flex justify-center items-center bg-orange-300 rounded-md size-6 text-sm">
+          <div className="flex justify-center items-center bg-orange-300 rounded-md size-6 text-orange-950 text-sm">
             G
           </div>
           {bingoNumbers.G.map((num) => (
@@ -96,7 +96,7 @@ function BingoGrid() {
           ))}
         </div>
         <div className="flex flex-col gap-1">
-          <div className="flex justify-center items-center bg-violet-300 rounded-md size-6 text-sm">
+          <div className="flex justify-center items-center bg-violet-300 rounded-md size-6 text-violet-950 text-sm">
             O
           </div>
           {bingoNumbers.O.map((num) => (
@@ -140,7 +140,7 @@ function GridWithCartelaNumber() {
     <div className="flex justify-center">
       <div className="gap-1 grid grid-cols-5">
         <div className="flex flex-col gap-1">
-          <div className="flex justify-center items-center bg-red-300 rounded-full size-8">
+          <div className="flex justify-center items-center bg-red-300 rounded-full size-8 text-red-950">
             B
           </div>
           {bingoNumbersWithCartela.B.map((num) => (
@@ -150,7 +150,7 @@ function GridWithCartelaNumber() {
           ))}
         </div>
         <div className="flex flex-col gap-1">
-          <div className="flex justify-center items-center bg-blue-300 rounded-full size-8">
+          <div className="flex justify-center items-center bg-blue-300 rounded-full size-8 text-blue-950">
             I
           </div>
           {bingoNumbersWithCartela.I.map((num) => (
@@ -160,7 +160,7 @@ function GridWithCartelaNumber() {
           ))}
         </div>
         <div className="flex flex-col gap-1">
-          <div className="flex justify-center items-center bg-green-300 rounded-full size-8">
+          <div className="flex justify-center items-center bg-green-300 rounded-full size-8 text-green-950">
             N
           </div>
           {bingoNumbersWithCartela.N.map((num) => (
@@ -170,7 +170,7 @@ function GridWithCartelaNumber() {
           ))}
         </div>
         <div className="flex flex-col gap-1">
-          <div className="flex justify-center items-center bg-orange-300 rounded-full size-8">
+          <div className="flex justify-center items-center bg-orange-300 rounded-full size-8 text-orange-950">
             G
           </div>
           {bingoNumbersWithCartela.G.map((num) => (
@@ -180,7 +180,7 @@ function GridWithCartelaNumber() {
           ))}
         </div>
         <div className="flex flex-col gap-1">
-          <div className="flex justify-center items-center bg-violet-300 rounded-full size-8">
+          <div className="flex justify-center items-center bg-violet-300 rounded-full size-8 text-violet-950">
             O
           </div>
           {bingoNumbersWithCartela.O.map((num) => (
