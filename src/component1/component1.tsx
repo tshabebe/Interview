@@ -10,9 +10,13 @@ export default function Component1() {
       </div>
       <div className="flex gap-2">
         <BingoGrid />
-        <div className="flex flex-col gap-2 px-2 grow">
-          <CountDown />
-          <CurrentCall />
+        <div className="flex flex-col gap-3 px-2 grow">
+          <div className="flex flex-col gap-2">
+            <CountDown />
+            <CurrentCall />
+          </div>
+          <div className="bg-emerald-600 rounded-md h-4"></div>
+          <GridWithCartelaNumber />
         </div>
       </div>
     </div>
@@ -47,51 +51,51 @@ function BingoGrid() {
     <div className="flex">
       <div className="gap-1 grid grid-cols-5">
         <div className="flex flex-col gap-1">
-          <div className="flex justify-center items-center bg-red-300 rounded-md size-8">
+          <div className="flex justify-center items-center bg-red-300 rounded-md size-6 text-sm">
             B
           </div>
           {bingoNumbers.B.map((num) => (
-            <div className="flex justify-center items-center bg-emerald-800 hover:bg-emerald-900 rounded-md size-8">
+            <div className="flex justify-center items-center bg-emerald-800 hover:bg-emerald-900 rounded-md size-6 text-sm">
               {num}
             </div>
           ))}
         </div>
         <div className="flex flex-col gap-1">
-          <div className="flex justify-center items-center bg-blue-300 rounded-md size-8">
+          <div className="flex justify-center items-center bg-blue-300 rounded-md size-6 text-sm">
             I
           </div>
           {bingoNumbers.I.map((num) => (
-            <div className="flex justify-center items-center bg-emerald-800 hover:bg-emerald-900 rounded-md size-8">
+            <div className="flex justify-center items-center bg-emerald-800 hover:bg-emerald-900 rounded-md size-6 text-sm">
               {num}
             </div>
           ))}
         </div>
         <div className="flex flex-col gap-1">
-          <div className="flex justify-center items-center bg-green-300 rounded-md size-8">
+          <div className="flex justify-center items-center bg-green-300 rounded-md size-6 text-sm">
             N
           </div>
           {bingoNumbers.N.map((num) => (
-            <div className="flex justify-center items-center bg-emerald-800 hover:bg-emerald-900 rounded-md size-8">
+            <div className="flex justify-center items-center bg-emerald-800 hover:bg-emerald-900 rounded-md size-6 text-sm">
               {num}
             </div>
           ))}
         </div>
         <div className="flex flex-col gap-1">
-          <div className="flex justify-center items-center bg-orange-300 rounded-md size-8">
+          <div className="flex justify-center items-center bg-orange-300 rounded-md size-6 text-sm">
             G
           </div>
           {bingoNumbers.G.map((num) => (
-            <div className="flex justify-center items-center bg-emerald-800 hover:bg-emerald-900 rounded-md size-8">
+            <div className="flex justify-center items-center bg-emerald-800 hover:bg-emerald-900 rounded-md size-6 text-sm">
               {num}
             </div>
           ))}
         </div>
         <div className="flex flex-col gap-1">
-          <div className="flex justify-center items-center bg-violet-300 rounded-md size-8">
+          <div className="flex justify-center items-center bg-violet-300 rounded-md size-6 text-sm">
             O
           </div>
           {bingoNumbers.O.map((num) => (
-            <div className="flex justify-center items-center bg-emerald-800 hover:bg-emerald-900 rounded-md size-8">
+            <div className="flex justify-center items-center bg-emerald-800 hover:bg-emerald-900 rounded-md size-6 text-sm">
               {num}
             </div>
           ))}
@@ -114,6 +118,72 @@ function CurrentCall() {
     <div className="flex justify-between items-center bg-emerald-700 px-4 py-2 rounded-md">
       <span>Current Call</span>
       <span className="bg-red-300 rounded-full size-8"></span>
+    </div>
+  )
+}
+
+function GridWithCartelaNumber() {
+  const bingoNumbersWithCartela = {
+    B: [6, 4, 5, 13, 12],
+    I: [17, 25, 30, 29, 28],
+    N: [42, 43, '*', 45, 33],
+    G: [54, 59, 57, 58, 55],
+    O: [73, 66, 64, 67, 71],
+  }
+  return (
+    <div className="flex justify-center">
+      <div className="gap-1 grid grid-cols-5">
+        <div className="flex flex-col gap-1">
+          <div className="flex justify-center items-center bg-red-300 rounded-full size-8">
+            B
+          </div>
+          {bingoNumbersWithCartela.B.map((num) => (
+            <div className="flex justify-center items-center bg-emerald-800 hover:bg-emerald-900 rounded-md size-8">
+              {num}
+            </div>
+          ))}
+        </div>
+        <div className="flex flex-col gap-1">
+          <div className="flex justify-center items-center bg-blue-300 rounded-full size-8">
+            I
+          </div>
+          {bingoNumbersWithCartela.I.map((num) => (
+            <div className="flex justify-center items-center bg-emerald-800 hover:bg-emerald-900 rounded-md size-8">
+              {num}
+            </div>
+          ))}
+        </div>
+        <div className="flex flex-col gap-1">
+          <div className="flex justify-center items-center bg-green-300 rounded-full size-8">
+            N
+          </div>
+          {bingoNumbersWithCartela.N.map((num) => (
+            <div className="flex justify-center items-center bg-emerald-800 hover:bg-emerald-900 rounded-md size-8">
+              {num}
+            </div>
+          ))}
+        </div>
+        <div className="flex flex-col gap-1">
+          <div className="flex justify-center items-center bg-orange-300 rounded-full size-8">
+            G
+          </div>
+          {bingoNumbersWithCartela.G.map((num) => (
+            <div className="flex justify-center items-center bg-emerald-800 hover:bg-emerald-900 rounded-md size-8">
+              {num}
+            </div>
+          ))}
+        </div>
+        <div className="flex flex-col gap-1">
+          <div className="flex justify-center items-center bg-violet-300 rounded-full size-8">
+            O
+          </div>
+          {bingoNumbersWithCartela.O.map((num) => (
+            <div className="flex justify-center items-center bg-emerald-800 hover:bg-emerald-900 rounded-md size-8">
+              {num}
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   )
 }
