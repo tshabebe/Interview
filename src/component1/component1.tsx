@@ -108,7 +108,8 @@ function BingoGrid() {
 function CountDown() {
   return (
     <div className="flex justify-between bg-emerald-950/50 px-4 py-2 rounded-md">
-      <span>Countdown</span> <span>25</span>
+      <span className="font-semibold">Countdown</span>{' '}
+      <span className="text-sm">25</span>
     </div>
   )
 }
@@ -116,7 +117,7 @@ function CountDown() {
 function CurrentCall() {
   return (
     <div className="flex justify-between items-center bg-emerald-700 px-4 py-2 rounded-md">
-      <span>Current Call</span>
+      <span className="font-semibold">Current Call</span>
       <span className="bg-red-300 rounded-full size-8"></span>
     </div>
   )
