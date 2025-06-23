@@ -212,7 +212,7 @@ function Refresh() {
 
 function Leave() {
   return (
-    <button className="bg-red-300 px-4 py-2 rounded-full text-red-950 grow hover:bgred-400">
+    <button className="bg-red-300 hover:bg-red-400 px-4 py-2 rounded-full text-red-950 grow hover:bgred-400">
       Leave
     </button>
   )
