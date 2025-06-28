@@ -122,7 +122,7 @@ function GameControls() {
 // CountDown component - game timer
 function CountDown() {
   return (
-    <div className="flex justify-between bg-sky-800 px-4 py-2 rounded-md">
+    <div className="flex justify-between bg-sky-800 px-4 text-sky-400 py-2 rounded-md">
       <span className="font-semibold">Countdown</span>
       <span className="text-sm">25</span>
     </div>
@@ -218,7 +218,7 @@ function CartelaColumn({ letter, numbers, color }: CartelaColumnProps) {
 // BingoButton component - call bingo button
 function BingoButton() {
   return (
-    <button className="bg-orange-500 hover:bg-orange-400 px-4 py-2 rounded-full text-orange-950">
+    <button className="bg-orange-500 hover:bg-orange-400 px-4 py-2 rounded-full text-orange-100">
       Bingo
     </button>
   )
