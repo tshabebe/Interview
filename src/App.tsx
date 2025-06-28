@@ -1,10 +1,11 @@
-import './App.css'
-import Component1 from './component1/component1'
+import BingoApp from './components/BingoAppSingle'
+import Component2 from './component2/component2'
 
 function App() {
   return (
     <div className="flex items-center justify-center">
-      <Component1 />
+      <BingoApp />
+      <Component2 />
     </div>
   )
 }
