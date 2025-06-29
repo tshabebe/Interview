@@ -30,7 +30,7 @@ interface InformationButtonProps {
 
 function InformationButton({ item, value }: InformationButtonProps) {
   return (
-    <button className="flex flex-col bg-sky-900 hover:bg-sky-800 px-2 py-1 rounded-md grow">
+    <button className="flex flex-col bg-sky-900 flex-1 hover:bg-sky-800 px-2 py-1 rounded-md grow">
       <span>{item}</span> <span>{value}</span>
     </button>
   )

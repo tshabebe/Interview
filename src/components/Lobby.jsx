@@ -28,7 +28,7 @@ function InformationBar() {
  */
 function InformationButton({ item, value }) {
   return (
-    <button className="flex flex-col bg-sky-900 hover:bg-sky-800 px-2 py-1 rounded-md grow">
+    <button className="flex flex-1 flex-col bg-sky-900 hover:bg-sky-800 px-2 py-1 rounded-md grow">
       <span>{item}</span> <span>{value}</span>
     </button>
   )
